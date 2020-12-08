@@ -28,7 +28,6 @@ impl Computer {
             self.operations[self.current].1 = true;
             match self.operations[self.current].0 {
                 Operation::NOP(_) => {
-                    self.operations[self.current].1 = true;
                     self.current += 1;
                 }
                 Operation::ACC(d) => {
